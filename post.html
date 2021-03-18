@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blog Post - My Profile</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="index.html">My Profile</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">ABOUT ME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">IDEAL JOB</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">personal profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="post.html">PROJECT IDEA</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image:url('assets/img/post-bg.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="post-heading">
+                        <h1 class="text-center">Project Idea</h1>
+                        <h2 class="text-center subheading">RIAV SYNAESTHESIS</h2><span class="text-center meta">&nbsp;Real-time, Interactive Wall Mountable Audio Visualizer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <h1>Overview</h1>
+                    <p>With an ever increasing number of home/industrial lighting accessories and decor pieces being purchased by today’s consumers, particularly younger home owners, the RIAV offers users a non static, unobtrusive, interactive, transparent window-like decor piece unlike any other, showcasing the technological marvel that is the Raspberry Pi and the real time rendering capabilities of ARM CPUs. This will further brew interest in creative Linux based applications among users. On the screen will be displayed a constantly running, frequency based visualizer that will produce synaesthesia-like abstract imagery in accordance to any surrounding sound, whether it be individuals having a conversation, or loud music, thus visually accompanying the mood of the surrounding area within which the art piece is installed, all in real-time. Thus listening to a certain song will render a certain image, and ambient sound will render an always evolving oscillating mandala of dynamic colour formations that is unique to the atmosphere of the room and noise presence. </p>
+                    <h1>Motivation</h1>
+                    <p>Studies conducted by Schrade, Tronsky and Kaiser, 2011,&nbsp;revealed that mandala’s have long been deemed one of the most effective coping mechanisms for psychological distress, thus a digital means of rendering such a display in a manner which reacts to ongoing atmosphere and sound would be highly sought after. </p>
+                    <p>Motivation for the development of this product stems from the rapidly increasing incorporation of LED decor lighting and abstract art pieces in every day homes. Statista cites that the art sector has been subject to significant growth in recent years, being valued at an estimated 67 billion dollars in 2018 (Statista. 2020)&nbsp;. This has been accompanied by rapid growth in the cumulative global volume of art piece sales, increasing by a total of 1 million transactions in 2018 to 39 million transactions (Topic: Art market, 2020). A further recent spike in sales has also been contributed to the advent of the COVID-19 pandemic (Duron, 2020), with many individuals finding themselves wanting to further the visual appeal of their homes with interesting content and smart devices which aid day to day tasks, notably Amazon Echo. Despite the apparent growth however, a gap in the market perpetuates, for a low cost, dynamic, reactive art piece that is unobtrusive and showcases the rapid progression of technology in a manner which prompts interest. </p>
+                    <h1>Description</h1>
+                    <p>The interactive art piece comprises of a transparent OLED screen with a resolution of 1080 x 1920 (avoiding 4k to put less stress on the Pi) &nbsp;that will display the output of a real time visual frequency analysis tool written in the JS (Jesusonic) language, which is optimized for audio applications (Watson, 2013). Input signal from the inbuilt mic will be analyzed within software running on a Raspberry Pi optimized Linux Distribution (piCore, a Tiny Core Linux port). Each incoming band of frequencies will be assigned a different shape and colour, thus rendering colourful 2D particle fractal formations in a mandala arrangement that vary in colour and size in accordance to the incoming frequency content, ie teal/blue for mid range frequencies attributed to the human voice, red for lower bass frequencies found in music, and orange/yellow for higher frequencies that can be attributed to ambient noise. The brightness of such formations will be directly assigned to the amplitude of the incoming signal, thus the louder individuals talk/have music playing, the brighter and larger the cloud formations displayed will be, and vice versa, ensuring a dynamic, non static experience that exhibits the full potential of ARM based infrastructure. This ultimately grants viewers with an abstract display of colours that is ever changing, in accordance to surrounding sound. Thus listening to a certain song will render a certain oscillated fractal pattern with colours that can not be reproduced any other time, or if the atmosphere of the room changes. When a particular frequency is detected by the spectrograph analysis tool, a diffused line will be rendered on screen, with lower frequencies (ie doors being closed, knocking, bass in music) assigned to a central position on the screen and higher frequencies (individuals talking, TV playing in background) assigned to outer areas. The displayed result will be a continuous, every changing 2D mandala rendered by the onboard ARM CPU. The mandala will oscillate continuously at a velocity determined by the amplitude of the incoming sound, ie how loud/quiet the room is. This will be directly assigned using JS commands using the data interpreted by a noise gate. Thus -30 db &nbsp;to -10db correlates to the mandala moving at 1-10 RPM, whilst -10 to 0 db would increase the rate of oscillation to 10-15 RPM, thus granting users a dynamic experience that reacts in real time to any activity in the room which may produce noise.&nbsp;</p>
+                    <p>The digital mandala&nbsp;comprises of transparent, window like, flexible, slim, 42 inch diagonal length monitor that can be wall mounted, with the Raspberry Pi situated within the bottom bezel. The Raspberry Pi, will be connected to an external power supply that can be hidden away from the display via a thin cable. Many companies, most notably Samsung, have showcased flexible OLED technology in recent years, allowing users to display vivid, high colour gamut content on a screen with greater strength than a traditional glass IPS panel (Samsung US Newsroom, 2018). LG have also boasted such technology in a transparent format for digital signage use cases (McCann, 2020)&nbsp;. Another key feature of the device, given that it is running a fully featured Linux OS, is the ability for users to display whatever content they desire on the OLED display, including photos and videos. This enables it to function as more than a mere art piece, opening doors to signage applications or serving as a digital photo frame. </p>
+                    <h1>Tools and Technologies</h1>
+                    <p>The Raspberry Pi will be optimized to run a fully featured instance of piCore 9.0, a lightweight Linux distribution that is most suitable for the onboard hardware of the device (Singh, 2017). This distribution has proven to be less straining on the ARM CPU, whilst utilizing the least amount of memory, ensuring that the device is energy efficient. Being that it is a RAM based OS, dedicated SSD storage can be dedicated solely to other more crucial software. Within the Linux command line, piCore will be configured to boot automatically into Reaper, a lightweight Linux based digital audio workstation (Lendino, 2019), upon turning on the device. Within Reaper, a direct in line audio feed (taken from a concealable USB mic attached to the Pi) is routed into a noise gate to interpolate the amplitude of the incoming signal, followed by a tailor made JS (Jesusonic)&nbsp;plugin, a easily accessible and editable programming language specifically tailored for audio applications (Watson, 2013). The JS plugin will interpret all frequency related information and will be responsible for assigning that data to a render node that will draw a separate line of the mandala for each oncoming sound, producing unique imagery. </p>
+                    <h1>Skills Required</h1>
+                    <p>Skills required to fully envision this project would include extensive knowledge in using the Linux command line, fluency in the JS programming language as well as adequate experience within the Raspberry Pi ecosystem. A JS plugin that can analyse and split incoming frequency into 5-6 separate bands currently exists, however a new piece of software will need to be written that efficiently render a colour/line for each frequency to produce patterns based on oncoming data from the noise gate. It is the later mentioned piece of software that will be responsible for rendering the 2D mandala, as well as determining the brightness and overall size of the pattern. piCore would need to be modified in order for it to prompt the launch of Reaper, the host of the JS plugin, upon turning on the device. Knowledge regarding piCore and the JS programming ecosystem is readily available on the internet however, and should not be difficult to acquire and apply to this project. Hardware required for this product is all currently available, with Samsung capable of manufacturing high resolution, transparent, flexible OLED screens, and the Raspberry Pi itself. The housing for the device would have to be self manufactured however. </p>
+                    <h1>Potential Dilemmas&nbsp;</h1>
+                    <blockquote class="blockquote">
+                        <p class="mb-0"></p>
+                    </blockquote>
+                    <p>Difficulties which may arise in development of this product particularly lie within the the rendering potential of the Raspberry Pi’s ARM based architecture. Stability may be questionable given ARM CPU’s tendency to throttle during prolonged, intensive workloads which the rendering software will present (Ivankov, 2020). This may be circumvented by potentially overclocking the CPU and providing adequate cooling, however this will add extra weight to the display. </p>
+                    <h1>Overview</h1>
+                    <p>Upon success, this product would effectively grant users an unprecedented, stress relieving audio visual experience that is cost effective and unobtrusive. The overall objective of this endeavour would be met, providing viewers with an entertaining, mood-accompanying product that would find itself at home in any environment, whether it be domestic or a commercial use case. A substantial impact throughout both art and home decor industries can also be anticipated, drawing new eyes to the innovations recent technological advancements such as the Raspberry Pi have enabled. This may prompt further hybrid developments utilizing both visual, audio, and open source linux based software, providing new forms of entertainment which were once unheard of, thus increasing the capacity for open source hardware/software as a medium for innovative developments to be fully realized. </p>
+                    <h1>References</h1>
+                    <p>Baguley, R., 2016. Appliance Science: Alexa, how does Alexa work?. [online] CNET. Available at: &lt;https://www.cnet.com/news/appliance-science-alexa-how-does-alexa-work-the-science-of-amazons-echo/&gt; </p>
+                    <p>Duron, M., 2020. Why Did People Begin Collecting Art During a Pandemic? – ARTnews.com. [online] Artnews.com. Available at: &lt;https://www.artnews.com/art-news/market/online-art-collecting-coronavirus-pandemic-1234573318/&gt; </p>
+                    <p>Heath, N., 2021. What is the Raspberry Pi 4? Everything you need to know about the tiny, low-cost computer | ZDNet. [online] ZDNet. Available at: &lt;https://www.zdnet.com/article/what-is-the-raspberry-pi-4-everything-you-need-to-know-about-the-tiny-low-cost-computer/&gt; </p>
+                    <p>Ivankov, A., 2020. ARM Explained: Advantages and Disadvantages | Profolus. [online] Profolus. Available at: &lt;https://www.profolus.com/topics/arm-explained-advantages-and-disadvantages/&gt; </p>
+                    <p>Lendino, J., 2019. Cockos Reaper Review. [online] PCMAG. Available at: &lt;https://www.pcmag.com/reviews/cockos-reaper&gt; </p>
+                    <p>McCann, J., 2020. LG brings its transparent OLED TV to beds, restaurants and public transit windows | TechRadar. [online] Techradar.com. Available at: &lt;https://www.techradar.com/au/news/lg-brings-its-transparent-oled-tv-to-beds-restaurants-and-public-transit-windows&gt;</p>
+                    <p>Samsung US Newsroom. 2018. Samsung Display’s ‘Unbreakable Flexible Panel’ Verified by UL - Samsung US Newsroom. [online] Available at: &lt;https://news.samsung.com/us/samsung-displays-unbreakable-panel-certified-underwriters-laboratories/&gt; </p>
+                    <p>Schrade, C., Tronsky, L. and Kaiser, D., 2011. Physiological effects of mandala making in adults with intellectual disability. The Arts in Psychotherapy, 38(2), pp.109-113.</p>
+                    <p>Shingledecker, R., 2013. Tiny Core Linux - Concepts. [online] Tinycorelinux.net. Available at: &lt;http://www.tinycorelinux.net/concepts.html&gt; </p>
+                    <p>Singh, P., 2017. piCore (Tiny Core) Linux on Raspberry Pi. [online] IoT Bytes. Available at: &lt;https://iotbytes.wordpress.com/picore-tiny-core-linux-on-raspberry-pi/&gt; </p>
+                    <p>Statista. 2020. Topic: Art market. [online] Available at: &lt;https://www.statista.com/topics/1119/art-market/&gt; </p>
+                    <p>Watson, B., 2013. Jesusonic Plug-Ins. [online] Soundonsound.com. Available at: &lt;https://www.soundonsound.com/techniques/jesusonic-plug-ins&gt; </p><a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <p class="text-muted copyright">Hamish Prasad</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/clean-blog.js"></script>
+</body>
+
+</html>
